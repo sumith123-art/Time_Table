@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Transport Board Departure Time</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="content-wrapper">
+
+        <!-- ===== HEADER AREA ===== -->
+        <header>
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <img src="Sri_Lanka_Transport_Board_logo.png" 
+                alt="Sri Lanka Transport Board Logo" 
+                id="logo">
+            </div>
+
+            <!-- Header Title Area -->
+            <div class="header-title">
+                <h1>Sri Lanka Transport Board  - kandy Regional</h1>
+                <h2 id="board-title">Live Departure Board</h2>
+            </div>
+
+            <!-- Current Time Area -->
+            <div id="current-time-container">
+                <span id="current-time"></span>
+            </div>
+        </header>
+
+        <!-- ===== FILTER AREA ===== -->
+        <div id="filter-container">
+            <select id="terminal-select">
+                <option value="">Select a Terminal</option>
+            </select>
+            <button id="filter-btn" class="action-btn">Filter</button>
+            <button id="reset-btn" class="action-btn reset">Reset</button>
+            <button id="fullscreen-btn" class="action-btn fullscreen" aria-label="Toggle Fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== DEPARTURE BOARD AREA ===== -->
+    <div class="board-container">
+        <div id="departure-board">
+            <p class="loading-message">Loading departure schedule...</p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script> 
+</body>
+</html>
